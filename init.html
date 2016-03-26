@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Initialization</title>
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">  
+</head>
+<body>
+    <div style="border: 1px solid gray; width:50%; padding:10px; margin:10px;">
+        <span style="color:#aaaaaa">http://192.168.99.100/init.html</span>
+            <h2>System Initialization</h2>
+                Important: all data would be deleted.
+                <br/><br/>
+
+            <form  action="./cgi-bin/init.cgi" method="POST">
+                <input class="btn btn-success" type="submit" name="init" value="Please Go Ahead">
+            </form>
+
+            <form action="index.html" method="POST">
+                <input class="btn btn-danger" type="submit" name="goback" value="Go Back">
+            </form>
+    </div>
+</body>

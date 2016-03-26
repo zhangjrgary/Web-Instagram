@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSCI4140 Web-Instagram</title> 
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">  
+</head>
+<body>
+
+<table border="1">
+  <tr>
+    <th>
+        <form enctype="multipart/form-data" action="cgi-bin/upload.cgi" method="POST">
+        Choose an image (.jpg .gif .png): <input class="btn btn-success" type="file" name="pic" accept="image/gif, image/jpeg, image/png" />
+        <input type="submit" value="Upload" />
+        </form>
+    </th>
+
+  </tr>
+  <tr>
+    <th>
+    <form enctype="multipart/form-data" action="cgi-bin/album.cgi" method="POST" tagert="_blank">
+    Display Photo <br />
+    <input class="btn btn-success" type="submit" value="Display" />
+    </form>
+    </th>
+  </tr>
+</table>
+
+
+</body>
+</html>
